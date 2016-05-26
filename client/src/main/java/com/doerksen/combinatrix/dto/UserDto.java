@@ -1,33 +1,4 @@
-package com.doerksen.base_project.dto;
-
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.ToString;
-
-/**
- * This is lombokified code. By simply annotating the class with @Data, we are able to generate all of the boilerplate
- * functions required for POJOs without actually coding anything. Compare it's size and simplicity to the block comment below.
- *
- * More information on Lombok can be found here: https://projectlombok.org/
- */
-
-@AllArgsConstructor         // creates a constructor that includes all fields listed below
-@Getter                     // creates getters for each of the fields below, if not all fields should be "gettable",
-                            //   then individual fields can be annotated, the same goes for setters
-@EqualsAndHashCode          // generates the equals and hash code methods as commented out in the block below
-@ToString                   // generates the toString method as commented out in the block below
-public class UserDto {
-    private long id;
-    private String firstName;
-    private String lastName;
-    private String emailAddress;
-}
-
-
-/**
-
- NOTE: This is the original, non-lombokified code (but was generated). See how much effort is required to implement the standard methods required?
+package com.doerksen.combinatrix.dto;
 
 public class UserDto {
     private final long id;
@@ -90,4 +61,4 @@ public class UserDto {
                 ", emailAddress='" + emailAddress + '\'' +
                 '}';
     }
-}*/
+}
